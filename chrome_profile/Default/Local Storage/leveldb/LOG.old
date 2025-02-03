@@ -1,3 +1,2 @@
-2025/02/03-12:05:33.539 29ec Reusing MANIFEST C:\Users\user\Documents\whatsappAutomatization\chrome_profile\Default\Local Storage\leveldb/MANIFEST-000001
-2025/02/03-12:05:33.540 29ec Recovering log #25
-2025/02/03-12:05:33.543 29ec Reusing old log C:\Users\user\Documents\whatsappAutomatization\chrome_profile\Default\Local Storage\leveldb/000025.log 
+2025/02/03-14:26:31.492 39a8 Creating DB C:\Users\user\whatsappAutomatization\chrome_profile\Default\Local Storage\leveldb since it was missing.
+2025/02/03-14:26:31.514 39a8 Reusing MANIFEST C:\Users\user\whatsappAutomatization\chrome_profile\Default\Local Storage\leveldb/MANIFEST-000001
