@@ -1,3 +1,2 @@
-2025/02/03-12:05:33.159 31a0 Reusing MANIFEST C:\Users\user\Documents\whatsappAutomatization\chrome_profile\Default\Service Worker\Database/MANIFEST-000001
-2025/02/03-12:05:33.205 31a0 Recovering log #3
-2025/02/03-12:05:33.206 31a0 Reusing old log C:\Users\user\Documents\whatsappAutomatization\chrome_profile\Default\Service Worker\Database/000003.log 
+2025/02/03-14:26:33.261 2b1c Creating DB C:\Users\user\whatsappAutomatization\chrome_profile\Default\Service Worker\Database since it was missing.
+2025/02/03-14:26:33.267 2b1c Reusing MANIFEST C:\Users\user\whatsappAutomatization\chrome_profile\Default\Service Worker\Database/MANIFEST-000001

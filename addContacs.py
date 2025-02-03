@@ -1,11 +1,13 @@
+import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 import time
-import os
 import logging
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -31,7 +33,7 @@ def add_to_whatsapp_community(driver, community_name):
     :param community_name: Name of the WhatsApp community.
     """
     driver.get("https://web.whatsapp.com/")
-    logging.info("Please scan the QR code to log in to WhatsApp.")
+    print("Please scan the QR code to log in to WhatsApp.")
     WebDriverWait(driver, 60).until(
         EC.presence_of_element_located((By.XPATH, '//div[@role="textbox"]'))
     )
@@ -52,26 +54,26 @@ def add_to_whatsapp_community(driver, community_name):
         time.sleep(2)
 
         # Open the menu
-        menu_button_xpath = '//div[@data-testid="menu"]'
+        menu_button_xpath = '/html/body/div[1]/div/div/div[3]/div/div[4]/div/header/div[3]/div/div[3]'
         WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, menu_button_xpath))
         ).click()
 
         # Click "Announcement Info"
-        announcement_info_xpath = '//div[text()="Announcement Info"]'
+        announcement_info_xpath = '/html/body/div[1]/div/div/span[5]/div/ul/div/div/li[1]'
         WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, announcement_info_xpath))
         ).click()
         time.sleep(2)
 
         # Click "Add Members"
-        add_members_xpath = '//div[text()="Add Members"]'
+        add_members_xpath = '/html/body/div[1]/div/div/div[3]/div/div[5]/span/div/span/span/div/div/section/div[1]/div/div[4]/button[2]'
         WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, add_members_xpath))
         ).click()
         time.sleep(2)
 
-        # Select all visible contacts
+        # Select all visible contacts by new class
         contact_list_xpath = "//div[contains(@class, '_ak72') and contains(@class, '_ak73') and contains(@class, '_ak75')]"
         WebDriverWait(driver, 20).until(
             EC.presence_of_all_elements_located((By.XPATH, contact_list_xpath))
@@ -81,54 +83,62 @@ def add_to_whatsapp_community(driver, community_name):
         for contact in contacts:
             try:
                 contact.click()
-                logging.info("Contact selected.")
+                print("Contact selected.")
             except Exception as e:
-                logging.error(f"Could not select contact: {e}")
+                print(f"Could not select contact: {e}")
 
-        # Click the "Next" button
-        next_button_xpath = '//div[text()="Next"]'
-        WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, next_button_xpath))
-        ).click()
-        time.sleep(2)
-        logging.info("Next button clicked. Proceeding to the next step.")
-
-        # Click the "Confirm" button
-        confirm_button_xpath = '//div[text()="Confirm"]'
+        # Potvrda dodavanja kontakata
+        confirm_button_xpath = '/html/body/div[1]/div/div/span[2]/div/span/div/div/div/div/div/div/span[2]/div/div/div'
         WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, confirm_button_xpath))
         ).click()
-        time.sleep(10)
-        logging.info("Confirm button clicked. Contacts have been added to the community.")
-
-        # Click the "Invite to Group" button
-        invite_button_xpath = '//div[text()="Invite to Group"]'
+        time.sleep(2)
+        print("All contacts have been added to the community.")
+        
+        # Ako postoji još jedno dugme za potvrdu, kliknite ga
+        additional_confirmation_button_xpath = '/html/body/div[1]/div/div/span[2]/div/span/div/div/div/div/div/div[2]/div/button[2]'
         WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, invite_button_xpath))
+            EC.element_to_be_clickable((By.XPATH, additional_confirmation_button_xpath))
         ).click()
-        time.sleep(10)
-        logging.info("Invite button clicked. Invitation sent to the selected contacts.")
+        time.sleep(2)
+        print("Additional confirmation step completed.")
+
+        # Pozivanje u grupu (ako je potrebno)
+        invite_to_group_button_xpath = '/html/body/div[1]/div/div/span[2]/div/span/div/div/div/div/div/div[2]/div/button[2]'
+        WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, invite_to_group_button_xpath))
+        ).click()
+        time.sleep(2)
+
+        # Ako postoji još jedno dugme za potvrdu, kliknite ga
+        invitation_xpath = '/html/body/div[1]/div/div/span[2]/div/span/div/div/div/div/div/div/div/span/div'
+        WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, invitation_xpath))
+        ).click()
+        time.sleep(1000)
+        print("Additional confirmation step completed.")
+        
+        print("Invited contacts to the group.")
 
     except Exception as e:
-        logging.error(f"Error selecting contacts: {e}")
+        print(f"Error selecting contacts: {e}")
+
+
 
 if __name__ == "__main__":
     # Path to the Excel file and configuration
-    excel_file = r'C:\Users\user\Documents\whatsappAutomatization\googleContacts.xlsx'
+    excel_file = r'C:\Users\user\Documents\whatsappAutomatization\whatsappAutomatization\googleContacts.xlsx'
     column_name = "mobitel"
     community_name = "GIT trgovina"
 
     # Set up WebDriver with a persistent profile
-    profile_path = r'C:\Users\user\Documents\whatsappAutomatization\chrome_profile'
+    profile_path = r'C:\Users\user\Documents\whatsappAutomatization\whatsappAutomatization\chrome_profile'
     options = webdriver.ChromeOptions()
     options.add_argument(f"--user-data-dir={profile_path}")
 
-    driver = webdriver.Chrome(
-        service=webdriver.chrome.service.Service(
-            r"C:\Users\user\Documents\whatsappAutomatization\chromedriver-win64\chromedriver.exe"
-        ),
-        options=options
-    )
+    # Use WebDriver Manager to automatically download the correct driver
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=options)
 
     try:
         add_to_whatsapp_community(driver, community_name)
