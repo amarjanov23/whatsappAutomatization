@@ -1,0 +1,10 @@
+[13508:1248:0203/120909.941:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[13172:9408:0203/120910.481:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[13508:1248:0203/120911.078:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yS/r/iVNVKFR1Xkl.js (157)
+[13508:1248:0203/120916.356:INFO:CONSOLE(71)] "ErrorUtils caught an error:
+
+Converting to a string will drop content data. Hash="undefined" Translation="Dodali ste {names}" Content="{"key":null,"ref":null,"props":{"contact":{"id":"385989792275@c.us","name":"Uglješa Erdeljan","shortName":"Uglješa","type":"in","labels":[],"isContactSyncCompleted":1,"textStatusLastUpdateTime":-1,"syncToAddressbook":true},"showNotifyName":true,"elev" (type=object,Object)
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs.", source: https://static.whatsapp.net/rsrc.php/v4/yO/r/w_t0SB6TdZS.js (71)
+[4540:9920:0203/120931.682:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:247 to client_task_runner_.
+[4540:9920:0203/120931.682:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:247 to client_task_runner_.

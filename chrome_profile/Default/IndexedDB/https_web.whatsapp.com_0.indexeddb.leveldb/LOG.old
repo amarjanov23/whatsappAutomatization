@@ -1,0 +1,24 @@
+2025/02/03-12:04:40.433 2e60 Reusing MANIFEST C:\Users\user\Documents\whatsappAutomatization\chrome_profile\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/02/03-12:04:40.434 2e60 Recovering log #438
+2025/02/03-12:04:40.441 2e60 Reusing old log C:\Users\user\Documents\whatsappAutomatization\chrome_profile\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000438.log 
+2025/02/03-12:04:43.439 ed8 Level-0 table #444: started
+2025/02/03-12:04:43.447 ed8 Level-0 table #444: 207038 bytes OK
+2025/02/03-12:04:43.448 ed8 Delete type=0 #438
+2025/02/03-12:04:43.449 3760 Manual compaction at level-0 from '\x00\x95\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x96\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/02/03-12:04:43.450 3760 Level-0 table #446: started
+2025/02/03-12:04:43.453 3760 Level-0 table #446: 437 bytes OK
+2025/02/03-12:04:43.455 3760 Delete type=0 #443
+2025/02/03-12:04:43.455 3760 Manual compaction at level-0 from '\x00\x96\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x97\x00\x00\x00' @ 0 : 0; will stop at '\x00\x96\x00\x00\x05' @ 395898 : 0
+2025/02/03-12:04:43.455 3760 Compacting 1@0 + 1@1 files
+2025/02/03-12:04:43.463 3760 Generated table #447@0: 3888 keys, 88357 bytes
+2025/02/03-12:04:43.463 3760 Compacted 1@0 + 1@1 files => 88357 bytes
+2025/02/03-12:04:43.464 3760 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/02/03-12:04:43.464 3760 Delete type=2 #446
+2025/02/03-12:04:43.465 3760 Manual compaction at level-0 from '\x00\x96\x00\x00\x05' @ 395898 : 0 .. '\x00\x97\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/02/03-12:04:45.381 2e60 Compacting 1@1 + 1@2 files
+2025/02/03-12:04:45.470 2e60 Generated table #448@1: 56174 keys, 1633117 bytes
+2025/02/03-12:04:45.470 2e60 Compacted 1@1 + 1@2 files => 1633117 bytes
+2025/02/03-12:04:45.471 2e60 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/02/03-12:04:45.472 2e60 Delete type=2 #441
+2025/02/03-12:04:45.472 2e60 Delete type=2 #444
+2025/02/03-12:04:45.472 2e60 Delete type=2 #447
