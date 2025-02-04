@@ -127,12 +127,12 @@ def add_to_whatsapp_community(driver, community_name):
 
 if __name__ == "__main__":
     # Path to the Excel file and configuration
-    excel_file = r'C:\Users\user\Documents\whatsappAutomatization\whatsappAutomatization\googleContacts.xlsx'
+    excel_file = r'C:\Users\user\whatsappAutomatization\whatsappAutomatization\googleContacts.xlsx'
     column_name = "mobitel"
     community_name = "GIT trgovina"
 
     # Set up WebDriver with a persistent profile
-    profile_path = r'C:\Users\user\Documents\whatsappAutomatization\whatsappAutomatization\chrome_profile'
+    profile_path = r'C:\Users\user\whatsappAutomatization\whatsappAutomatization\chrome_profile'
     options = webdriver.ChromeOptions()
     options.add_argument(f"--user-data-dir={profile_path}")
 
