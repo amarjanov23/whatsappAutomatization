@@ -1,0 +1,13 @@
+2025/02/04-12:06:55.044 3dac Reusing MANIFEST C:\Users\user\whatsappAutomatization\whatsappAutomatization\chrome_profile\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/02/04-12:06:55.045 3dac Recovering log #134
+2025/02/04-12:06:55.051 3dac Reusing old log C:\Users\user\whatsappAutomatization\whatsappAutomatization\chrome_profile\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000134.log 
+2025/02/04-12:06:55.396 3a2c Level-0 table #139: started
+2025/02/04-12:06:55.403 3a2c Level-0 table #139: 145978 bytes OK
+2025/02/04-12:06:55.404 3a2c Delete type=0 #134
+2025/02/04-12:06:55.405 26d4 Manual compaction at level-0 from '\x006\x00\x00\x00' @ 72057594037927935 : 1 .. '\x007\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/02/04-12:06:57.217 3dac Compacting 1@1 + 1@2 files
+2025/02/04-12:06:57.270 3dac Generated table #140@1: 39141 keys, 1408317 bytes
+2025/02/04-12:06:57.270 3dac Compacted 1@1 + 1@2 files => 1408317 bytes
+2025/02/04-12:06:57.271 3dac compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/02/04-12:06:57.271 3dac Delete type=2 #136
+2025/02/04-12:06:57.271 3dac Delete type=2 #139
