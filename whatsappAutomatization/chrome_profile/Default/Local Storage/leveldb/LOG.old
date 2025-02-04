@@ -1,0 +1,16 @@
+2025/02/04-12:06:54.293 a48 Reusing MANIFEST C:\Users\user\whatsappAutomatization\whatsappAutomatization\chrome_profile\Default\Local Storage\leveldb/MANIFEST-000001
+2025/02/04-12:06:54.312 a48 Recovering log #9
+2025/02/04-12:06:54.313 a48 Level-0 table #11: started
+2025/02/04-12:06:54.329 a48 Level-0 table #11: 16227 bytes OK
+2025/02/04-12:06:54.330 a48 Recovering log #11
+2025/02/04-12:06:54.333 a48 Reusing old log C:\Users\user\whatsappAutomatization\whatsappAutomatization\chrome_profile\Default\Local Storage\leveldb/000011.log 
+2025/02/04-12:06:54.336 a48 Delete type=0 #9
+2025/02/04-12:06:54.337 a48 Delete type=2 #12
+2025/02/04-12:06:54.339 30d0 Compacting 4@0 + 0@1 files
+2025/02/04-12:06:54.345 30d0 Generated table #12@0: 85 keys, 6981 bytes
+2025/02/04-12:06:54.345 30d0 Compacted 4@0 + 0@1 files => 6981 bytes
+2025/02/04-12:06:54.346 30d0 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/02/04-12:06:54.347 30d0 Delete type=2 #3
+2025/02/04-12:06:54.347 30d0 Delete type=2 #7
+2025/02/04-12:06:54.347 30d0 Delete type=2 #9
+2025/02/04-12:06:54.348 30d0 Delete type=2 #11

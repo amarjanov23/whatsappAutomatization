@@ -1,0 +1,6 @@
+[10612:11456:0204/121114.070:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[1564:10316:0204/121114.469:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[10612:11456:0204/121115.316:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yl/r/vh_U2GAUl0Y.js (157)
+[10612:11456:0204/121123.130:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yl/r/vh_U2GAUl0Y.js (157)
+[11320:10892:0204/121131.713:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:247 to client_task_runner_.
+[11320:10892:0204/121131.713:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:247 to client_task_runner_.
