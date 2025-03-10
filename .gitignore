@@ -1,0 +1,13 @@
+# Isključivanje Chrome profila
+chrome_profile/
+
+# Isključivanje PyCache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Isključivanje temp datoteka
+*.log
+*.tmp
+.DS_Store
