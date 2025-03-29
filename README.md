@@ -44,4 +44,4 @@ Kontaktima se pristupa preko XPath selektora, pa se preporučuje ručno testiran
 ## Autor
 
 **Adam Marjanović**  
-[https://github.com/amarjanov23](https://github.com/amarjanov23
+[https://github.com/amarjanov23](https://github.com/amarjanov23)
