@@ -13,19 +13,19 @@ Prije pokretanja osiguraj da imaš instalirane sljedeće pakete:
 Pakete možeš instalirati pomoću:
 
 ```
-pip install -r req.txt
+pip install -r requirements.txt
 ```
 ## Kako koristiti
 
 ### Postavi Chrome profil
 - Otvori Google Chrome, prijavi se na [WhatsApp Web](https://web.whatsapp.com) i sačuvaj svoj korisnički profil.
-- U skripti (main.py), postavi putanju do svog Chrome profila. Preporučuje se korištenje relativne putanje (npr. chrome_profile).
+- U skripti (whatsapp_bot.py), postavi putanju do svog Chrome profila. Preporučuje se korištenje relativne putanje (npr. chrome_profile).
 
 ### Pokreni skriptu
 - Otvori terminal u direktoriju projekta i pokreni:
   
 ```
-  python src/main.py
+  python src/whatsapp.py
 ```
 Nakon pokretanja, pojavit će se QR kod za prijavu na WhatsApp Web. Skeniraj QR kod sa svojim mobitelom.
 
