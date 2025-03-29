@@ -1,0 +1,25 @@
+2025/03/29-09:39:56.924 3e3c Reusing MANIFEST C:\Users\user\Documents\whatsappAutomatization\src\chrome_profile\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/29-09:39:56.925 3e3c Recovering log #129
+2025/03/29-09:39:56.931 3e3c Reusing old log C:\Users\user\Documents\whatsappAutomatization\src\chrome_profile\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000129.log 
+2025/03/29-09:39:56.931 3e3c Delete type=2 #128
+2025/03/29-09:39:57.202 3e3c Level-0 table #134: started
+2025/03/29-09:39:57.206 3e3c Level-0 table #134: 94645 bytes OK
+2025/03/29-09:39:57.207 3e3c Delete type=0 #129
+2025/03/29-09:39:57.209 3e3c Manual compaction at level-0 from '\x007\x00\x00\x00' @ 72057594037927935 : 1 .. '\x008\x00\x00\x00' @ 0 : 0; will stop at '\x008\x00\x00\x05' @ 139543 : 1
+2025/03/29-09:39:57.209 3e3c Compacting 1@0 + 1@1 files
+2025/03/29-09:39:57.274 3e3c Generated table #135@0: 61591 keys, 1124219 bytes
+2025/03/29-09:39:57.274 3e3c Compacted 1@0 + 1@1 files => 1124219 bytes
+2025/03/29-09:39:57.276 3e3c compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/03/29-09:39:57.277 3e3c Delete type=2 #134
+2025/03/29-09:39:57.277 3e3c Manual compaction at level-0 from '\x008\x00\x00\x05' @ 139543 : 1 .. '\x008\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/29-09:39:57.278 3e3c Level-0 table #137: started
+2025/03/29-09:39:57.281 3e3c Level-0 table #137: 249 bytes OK
+2025/03/29-09:39:57.282 3e3c Delete type=2 #131
+2025/03/29-09:39:57.282 3e3c Delete type=0 #133
+2025/03/29-09:39:57.283 3e3c Manual compaction at level-0 from '\x008\x00\x00\x00' @ 72057594037927935 : 1 .. '\x009\x00\x00\x00' @ 0 : 0; will stop at '\x008\x00\x00\x05' @ 139589 : 0
+2025/03/29-09:39:57.283 3e3c Compacting 1@0 + 1@1 files
+2025/03/29-09:39:57.330 3e3c Generated table #138@0: 61589 keys, 1124087 bytes
+2025/03/29-09:39:57.330 3e3c Compacted 1@0 + 1@1 files => 1124087 bytes
+2025/03/29-09:39:57.331 3e3c compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/03/29-09:39:57.332 3e3c Delete type=2 #137
+2025/03/29-09:39:57.332 3e3c Manual compaction at level-0 from '\x008\x00\x00\x05' @ 139589 : 0 .. '\x009\x00\x00\x00' @ 0 : 0; will stop at (end)

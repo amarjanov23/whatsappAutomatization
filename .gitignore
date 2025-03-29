@@ -1,0 +1,26 @@
+# Ignoriraj korisničke profile i druge privatne datoteke
+#chrome_profile/
+#chromedriver-win64/
+
+# Python bytecode datoteke
+__pycache__/
+*.pyc
+*.pyo
+
+# Log datoteke
+*.log
+
+# Preporučeni direktoriji za ignoriranje
+*.env
+
+# Datoteke specifične za IDE-e
+.vscode/
+.idea/
+*.iml
+
+# Podaci iz Excel datoteka (ako ih ne želite spremati u repozitorij)
+*.xlsx
+
+# Datoteke specifične za OS
+.DS_Store
+Thumbs.db
