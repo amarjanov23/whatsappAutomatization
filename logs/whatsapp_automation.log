@@ -1,0 +1,85 @@
+2025-03-29 10:49:27,916 - INFO - ====== WebDriver manager ======
+2025-03-29 10:49:29,689 - INFO - Get LATEST chromedriver version for google-chrome
+2025-03-29 10:49:29,691 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-03-29 10:49:29,761 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 10391
+2025-03-29 10:49:29,764 - INFO - Get LATEST chromedriver version for google-chrome
+2025-03-29 10:49:29,765 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-03-29 10:49:29,815 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 10391
+2025-03-29 10:49:29,824 - INFO - Driver [C:\Users\user\.wdm\drivers\chromedriver\win64\134.0.6998.165\chromedriver-win32/chromedriver.exe] found in cache
+2025-03-29 10:49:29,824 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\user\.wdm\drivers\chromedriver\win64\134.0.6998.165\chromedriver-win32/chromedriver.exe
+2025-03-29 10:49:29,831 - DEBUG - Started executable: `C:\Users\user\.wdm\drivers\chromedriver\win64\134.0.6998.165\chromedriver-win32/chromedriver.exe` in a child process with pid: 7296 using 0 to output -3
+2025-03-29 10:49:30,353 - DEBUG - POST http://localhost:64209/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--user-data-dir=C:\\Users\\user\\Documents\\whatsappAutomatization\\src\\chrome_profile']}}}}
+2025-03-29 10:49:30,353 - DEBUG - Starting new HTTP connection (1): localhost:64209
+2025-03-29 10:49:31,147 - DEBUG - http://localhost:64209 "POST /session HTTP/1.1" 200 0
+2025-03-29 10:49:31,147 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"134.0.6998.178","chrome":{"chromedriverVersion":"134.0.6998.165 (fd886e2cb29dd984c13deec032832dee68d8abe3-refs/branch-heads/6998@{#2122})","userDataDir":"C:\\Users\\user\\Documents\\whatsappAutomatization\\src\\chrome_profile"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:64212"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"f6beca01ea2e492383a87e9c74ae5550"}} | headers=HTTPHeaderDict({'Content-Length': '889', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-29 10:49:31,148 - DEBUG - Finished Request
+2025-03-29 10:49:31,148 - INFO - Navigating to WhatsApp Web
+2025-03-29 10:49:31,148 - DEBUG - POST http://localhost:64209/session/f6beca01ea2e492383a87e9c74ae5550/url {'url': 'https://web.whatsapp.com/'}
+2025-03-29 10:49:31,614 - DEBUG - http://localhost:64209 "POST /session/f6beca01ea2e492383a87e9c74ae5550/url HTTP/1.1" 200 0
+2025-03-29 10:49:31,614 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-29 10:49:31,614 - DEBUG - Finished Request
+2025-03-29 10:49:31,619 - DEBUG - POST http://localhost:64209/session/f6beca01ea2e492383a87e9c74ae5550/element {'using': 'xpath', 'value': '//div[@role="textbox"]'}
+2025-03-29 10:49:33,412 - DEBUG - http://localhost:64209 "POST /session/f6beca01ea2e492383a87e9c74ae5550/element HTTP/1.1" 404 0
+2025-03-29 10:49:33,412 - DEBUG - Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@role=\"textbox\"]\"}\n  (Session info: chrome=134.0.6998.178)","stacktrace":"\tGetHandleVerifier [0x005EC7F3+24435]\n\t(No symbol) [0x00572074]\n\t(No symbol) [0x004406E3]\n\t(No symbol) [0x00488B39]\n\t(No symbol) [0x00488E8B]\n\t(No symbol) [0x004D1AC2]\n\t(No symbol) [0x004AD804]\n\t(No symbol) [0x004CF20A]\n\t(No symbol) [0x004AD5B6]\n\t(No symbol) [0x0047C54F]\n\t(No symbol) [0x0047D894]\n\tGetHandleVerifier [0x008F70A3+3213347]\n\tGetHandleVerifier [0x0090B0C9+3295305]\n\tGetHandleVerifier [0x0090558C+3271948]\n\tGetHandleVerifier [0x00687360+658144]\n\t(No symbol) [0x0057B27D]\n\t(No symbol) [0x00578208]\n\t(No symbol) [0x005783A9]\n\t(No symbol) [0x0056AAC0]\n\tBaseThreadInitThunk [0x76355D49+25]\n\tRtlInitializeExceptionChain [0x778FCDEB+107]\n\tRtlGetAppContainerNamedObjectPath [0x778FCD71+561]\n"}} | headers=HTTPHeaderDict({'Content-Length': '954', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-29 10:49:33,413 - DEBUG - Finished Request
+2025-03-29 10:49:33,913 - DEBUG - POST http://localhost:64209/session/f6beca01ea2e492383a87e9c74ae5550/element {'using': 'xpath', 'value': '//div[@role="textbox"]'}
+2025-03-29 10:49:33,949 - DEBUG - http://localhost:64209 "POST /session/f6beca01ea2e492383a87e9c74ae5550/element HTTP/1.1" 404 0
+2025-03-29 10:49:33,949 - DEBUG - Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@role=\"textbox\"]\"}\n  (Session info: chrome=134.0.6998.178)","stacktrace":"\tGetHandleVerifier [0x005EC7F3+24435]\n\t(No symbol) [0x00572074]\n\t(No symbol) [0x004406E3]\n\t(No symbol) [0x00488B39]\n\t(No symbol) [0x00488E8B]\n\t(No symbol) [0x004D1AC2]\n\t(No symbol) [0x004AD804]\n\t(No symbol) [0x004CF20A]\n\t(No symbol) [0x004AD5B6]\n\t(No symbol) [0x0047C54F]\n\t(No symbol) [0x0047D894]\n\tGetHandleVerifier [0x008F70A3+3213347]\n\tGetHandleVerifier [0x0090B0C9+3295305]\n\tGetHandleVerifier [0x0090558C+3271948]\n\tGetHandleVerifier [0x00687360+658144]\n\t(No symbol) [0x0057B27D]\n\t(No symbol) [0x00578208]\n\t(No symbol) [0x005783A9]\n\t(No symbol) [0x0056AAC0]\n\tBaseThreadInitThunk [0x76355D49+25]\n\tRtlInitializeExceptionChain [0x778FCDEB+107]\n\tRtlGetAppContainerNamedObjectPath [0x778FCD71+561]\n"}} | headers=HTTPHeaderDict({'Content-Length': '954', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-29 10:49:33,950 - DEBUG - Finished Request
+2025-03-29 10:49:34,450 - DEBUG - POST http://localhost:64209/session/f6beca01ea2e492383a87e9c74ae5550/element {'using': 'xpath', 'value': '//div[@role="textbox"]'}
+2025-03-29 10:49:34,461 - DEBUG - http://localhost:64209 "POST /session/f6beca01ea2e492383a87e9c74ae5550/element HTTP/1.1" 404 0
+2025-03-29 10:49:34,461 - DEBUG - Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@role=\"textbox\"]\"}\n  (Session info: chrome=134.0.6998.178)","stacktrace":"\tGetHandleVerifier [0x005EC7F3+24435]\n\t(No symbol) [0x00572074]\n\t(No symbol) [0x004406E3]\n\t(No symbol) [0x00488B39]\n\t(No symbol) [0x00488E8B]\n\t(No symbol) [0x004D1AC2]\n\t(No symbol) [0x004AD804]\n\t(No symbol) [0x004CF20A]\n\t(No symbol) [0x004AD5B6]\n\t(No symbol) [0x0047C54F]\n\t(No symbol) [0x0047D894]\n\tGetHandleVerifier [0x008F70A3+3213347]\n\tGetHandleVerifier [0x0090B0C9+3295305]\n\tGetHandleVerifier [0x0090558C+3271948]\n\tGetHandleVerifier [0x00687360+658144]\n\t(No symbol) [0x0057B27D]\n\t(No symbol) [0x00578208]\n\t(No symbol) [0x005783A9]\n\t(No symbol) [0x0056AAC0]\n\tBaseThreadInitThunk [0x76355D49+25]\n\tRtlInitializeExceptionChain [0x778FCDEB+107]\n\tRtlGetAppContainerNamedObjectPath [0x778FCD71+561]\n"}} | headers=HTTPHeaderDict({'Content-Length': '954', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-29 10:49:34,461 - DEBUG - Finished Request
+2025-03-29 10:49:34,961 - DEBUG - POST http://localhost:64209/session/f6beca01ea2e492383a87e9c74ae5550/element {'using': 'xpath', 'value': '//div[@role="textbox"]'}
+2025-03-29 10:49:34,972 - DEBUG - http://localhost:64209 "POST /session/f6beca01ea2e492383a87e9c74ae5550/element HTTP/1.1" 404 0
+2025-03-29 10:49:34,973 - DEBUG - Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@role=\"textbox\"]\"}\n  (Session info: chrome=134.0.6998.178)","stacktrace":"\tGetHandleVerifier [0x005EC7F3+24435]\n\t(No symbol) [0x00572074]\n\t(No symbol) [0x004406E3]\n\t(No symbol) [0x00488B39]\n\t(No symbol) [0x00488E8B]\n\t(No symbol) [0x004D1AC2]\n\t(No symbol) [0x004AD804]\n\t(No symbol) [0x004CF20A]\n\t(No symbol) [0x004AD5B6]\n\t(No symbol) [0x0047C54F]\n\t(No symbol) [0x0047D894]\n\tGetHandleVerifier [0x008F70A3+3213347]\n\tGetHandleVerifier [0x0090B0C9+3295305]\n\tGetHandleVerifier [0x0090558C+3271948]\n\tGetHandleVerifier [0x00687360+658144]\n\t(No symbol) [0x0057B27D]\n\t(No symbol) [0x00578208]\n\t(No symbol) [0x005783A9]\n\t(No symbol) [0x0056AAC0]\n\tBaseThreadInitThunk [0x76355D49+25]\n\tRtlInitializeExceptionChain [0x778FCDEB+107]\n\tRtlGetAppContainerNamedObjectPath [0x778FCD71+561]\n"}} | headers=HTTPHeaderDict({'Content-Length': '954', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-29 10:49:34,973 - DEBUG - Finished Request
+2025-03-29 10:49:35,473 - DEBUG - POST http://localhost:64209/session/f6beca01ea2e492383a87e9c74ae5550/element {'using': 'xpath', 'value': '//div[@role="textbox"]'}
+2025-03-29 10:49:35,599 - DEBUG - http://localhost:64209 "POST /session/f6beca01ea2e492383a87e9c74ae5550/element HTTP/1.1" 200 0
+2025-03-29 10:49:35,599 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.32199815F860CBBD68D24AF739B7D0BC.d.90FD8DAB5A89CC4EF5DEF7676C7FD7AA.e.11"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-29 10:49:35,599 - DEBUG - Finished Request
+2025-03-29 10:49:35,599 - INFO - WhatsApp Web loaded successfully.
+2025-03-29 10:49:35,599 - INFO - Searching for community
+2025-03-29 10:49:35,599 - DEBUG - POST http://localhost:64209/session/f6beca01ea2e492383a87e9c74ae5550/element {'using': 'xpath', 'value': '//div[@role="textbox" and @contenteditable="true"]'}
+2025-03-29 10:49:35,620 - DEBUG - http://localhost:64209 "POST /session/f6beca01ea2e492383a87e9c74ae5550/element HTTP/1.1" 200 0
+2025-03-29 10:49:35,620 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.32199815F860CBBD68D24AF739B7D0BC.d.90FD8DAB5A89CC4EF5DEF7676C7FD7AA.e.11"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-29 10:49:35,620 - DEBUG - Finished Request
+2025-03-29 10:49:35,621 - DEBUG - POST http://localhost:64209/session/f6beca01ea2e492383a87e9c74ae5550/element/f.32199815F860CBBD68D24AF739B7D0BC.d.90FD8DAB5A89CC4EF5DEF7676C7FD7AA.e.11/value {'text': 'GIT trgovina', 'value': ['G', 'I', 'T', ' ', 't', 'r', 'g', 'o', 'v', 'i', 'n', 'a']}
+2025-03-29 10:49:35,960 - DEBUG - http://localhost:64209 "POST /session/f6beca01ea2e492383a87e9c74ae5550/element/f.32199815F860CBBD68D24AF739B7D0BC.d.90FD8DAB5A89CC4EF5DEF7676C7FD7AA.e.11/value HTTP/1.1" 200 0
+2025-03-29 10:49:35,960 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-29 10:49:35,960 - DEBUG - Finished Request
+2025-03-29 10:49:37,960 - DEBUG - Waiting for element: //span[@title="GIT trgovina"]
+2025-03-29 10:49:37,961 - DEBUG - POST http://localhost:64209/session/f6beca01ea2e492383a87e9c74ae5550/element {'using': 'xpath', 'value': '//span[@title="GIT trgovina"]'}
+2025-03-29 10:49:37,962 - DEBUG - http://localhost:64209 "POST /session/f6beca01ea2e492383a87e9c74ae5550/element HTTP/1.1" 404 0
+2025-03-29 10:49:37,962 - DEBUG - Remote response: status=404 | data={"value":{"error":"invalid session id","message":"invalid session id: session deleted as the browser has closed the connection\nfrom disconnected: not connected to DevTools\n  (Session info: chrome=134.0.6998.178)","stacktrace":"\tGetHandleVerifier [0x005EC7F3+24435]\n\t(No symbol) [0x00572074]\n\t(No symbol) [0x004406E3]\n\t(No symbol) [0x0042FEC0]\n\t(No symbol) [0x0044DFDF]\n\t(No symbol) [0x004B46AF]\n\t(No symbol) [0x004CEB19]\n\t(No symbol) [0x004AD5B6]\n\t(No symbol) [0x0047C54F]\n\t(No symbol) [0x0047D894]\n\tGetHandleVerifier [0x008F70A3+3213347]\n\tGetHandleVerifier [0x0090B0C9+3295305]\n\tGetHandleVerifier [0x0090558C+3271948]\n\tGetHandleVerifier [0x00687360+658144]\n\t(No symbol) [0x0057B27D]\n\t(No symbol) [0x00578208]\n\t(No symbol) [0x005783A9]\n\t(No symbol) [0x0056AAC0]\n\tBaseThreadInitThunk [0x76355D49+25]\n\tRtlInitializeExceptionChain [0x778FCDEB+107]\n\tRtlGetAppContainerNamedObjectPath [0x778FCD71+561]\n"}} | headers=HTTPHeaderDict({'Content-Length': '944', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-29 10:49:37,962 - DEBUG - Finished Request
+2025-03-29 10:49:37,962 - ERROR - Error during process: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.178)
+Stacktrace:
+	GetHandleVerifier [0x005EC7F3+24435]
+	(No symbol) [0x00572074]
+	(No symbol) [0x004406E3]
+	(No symbol) [0x0042FEC0]
+	(No symbol) [0x0044DFDF]
+	(No symbol) [0x004B46AF]
+	(No symbol) [0x004CEB19]
+	(No symbol) [0x004AD5B6]
+	(No symbol) [0x0047C54F]
+	(No symbol) [0x0047D894]
+	GetHandleVerifier [0x008F70A3+3213347]
+	GetHandleVerifier [0x0090B0C9+3295305]
+	GetHandleVerifier [0x0090558C+3271948]
+	GetHandleVerifier [0x00687360+658144]
+	(No symbol) [0x0057B27D]
+	(No symbol) [0x00578208]
+	(No symbol) [0x005783A9]
+	(No symbol) [0x0056AAC0]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x778FCDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x778FCD71+561]
+
+2025-03-29 10:49:37,962 - DEBUG - DELETE http://localhost:64209/session/f6beca01ea2e492383a87e9c74ae5550 {}
+2025-03-29 10:49:37,963 - DEBUG - http://localhost:64209 "DELETE /session/f6beca01ea2e492383a87e9c74ae5550 HTTP/1.1" 200 0
+2025-03-29 10:49:37,963 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-03-29 10:49:37,963 - DEBUG - Finished Request
