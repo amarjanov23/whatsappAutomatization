@@ -19,12 +19,12 @@ pip install -r req.txt
 
 ### Postavi Chrome profil
 - Otvori Google Chrome, prijavi se na [WhatsApp Web](https://web.whatsapp.com) i sačuvaj svoj korisnički profil.
-- U skripti (`main.py`), postavi putanju do svog Chrome profila. Preporučuje se korištenje relativne putanje (npr. `chrome_profile`).
+- U skripti (`whatsapp_bot.py`), postavi putanju do svog Chrome profila. Preporučuje se korištenje relativne putanje (npr. `chrome_profile`).
 
 ### Pokreni skriptu
 - Otvori terminal u direktoriju projekta i pokreni:
   ```sh
-  python src/main.py
+  python whatsapp_bot.py
 
 Nakon pokretanja, pojavit će se QR kod za prijavu na WhatsApp Web. Skeniraj QR kod sa svojim mobitelom.
 
@@ -42,5 +42,5 @@ Kontaktima se pristupa preko XPath selektora, pa se preporučuje ručno testiran
 
 ## Autor
 
-**Amar Janov**  
-[https://github.com/amarjanov](https://github.com/amarjanov)
+**Adam Marjanović**  
+[https://github.com/amarjanov23](https://github.com/amarjanov23)
