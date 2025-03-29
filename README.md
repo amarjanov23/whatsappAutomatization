@@ -13,7 +13,7 @@ Prije pokretanja osiguraj da imaš instalirane sljedeće pakete:
 Pakete možeš instalirati pomoću:
 
 ```sh
-pip install -r req.txt
+pip install -r requirements.txt
 ```
 ## Kako koristiti
 
