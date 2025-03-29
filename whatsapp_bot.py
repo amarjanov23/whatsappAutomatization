@@ -1,30 +1,21 @@
+import os
+import logging
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-import logging
-import pandas as pd  # Dodan import za pandas
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.service import Service
 
 # Logging setup
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='whatsapp_automation.log', filemode='w')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='logs/whatsapp_automation.log', filemode='w')
 
 def wait_and_click(driver, xpath, timeout=10):
     """Waits for an element to be clickable and clicks it."""
     logging.debug(f"Waiting for element: {xpath}")
     WebDriverWait(driver, timeout).until(EC.element_to_be_clickable((By.XPATH, xpath))).click()
     logging.debug(f"Clicked element: {xpath}")
-
-def load_contacts(file_path, column_name):
-    """Load phone numbers from an Excel file."""
-    try:
-        df = pd.read_excel(file_path)
-        return df[column_name].astype(str).tolist()
-    except Exception as e:
-        logging.error(f"Error loading contacts: {e}")
-        return []
 
 def add_to_whatsapp_community(driver, community_name):
     """Automates adding all visible contacts to a WhatsApp community."""
@@ -110,7 +101,7 @@ if __name__ == "__main__":
     community_name = "GIT trgovina"
 
     # Set up WebDriver with a persistent profile
-    profile_path = 'chrome_profile'
+    profile_path = os.path.join(os.getcwd(), 'src', 'chrome_profile')
     options = webdriver.ChromeOptions()
     options.add_argument(f"--user-data-dir={profile_path}")
 
@@ -124,4 +115,7 @@ if __name__ == "__main__":
     except Exception as e:
         logging.error(f"Failed to start WebDriver: {e}")
     finally:
-        driver.quit()
+        try:
+            driver.quit()
+        except Exception as e:
+            logging.error(f"Error while quitting WebDriver: {e}")
