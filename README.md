@@ -1,21 +1,20 @@
-# WhatsApp Automatizacija
+# WhatsApp Automatization
 
-Ovaj projekt omogućava automatizirano dodavanje kontakata u WhatsApp zajednicu koristeći **Selenium WebDriver** i **ChromeDriver**. Skripta automatski pretražuje WhatsApp Web i dodaje vidljive kontakte u zajednicu.
+Ovaj projekt omogućava automatizirano dodavanje kontakata u WhatsApp zajednicu koristeći Selenium WebDriver.
 
 ## Preduvjeti
 
-Prije nego što pokreneš skriptu, osiguraj da imaš instalirane sljedeće pakete:
+Prije pokretanja osiguraj da imaš instalirane sljedeće pakete:
 
-- **Python 3.x**
-- **Google Chrome**
-- **ChromeDriver** (odgovarajuća verzija za tvoj Chrome)
+- Python 3.x
+- Google Chrome
+- ChromeDriver (odgovarajuća verzija za tvoj Chrome)
 
-Za instalaciju potrebnih Python paketa, koristi sljedeću naredbu:
+Pakete možeš instalirati pomoću:
 
-```bash
-pip install -r requirements.txt
 ```
-
+pip install -r req.txt
+```
 ## Kako koristiti
 
 ### Postavi Chrome profil
@@ -25,8 +24,8 @@ pip install -r requirements.txt
 ### Pokreni skriptu
 - Otvori terminal u direktoriju projekta i pokreni:
   
-```bash
-  python whatsapp_bot.py
+```
+  python src/main.py
 ```
 Nakon pokretanja, pojavit će se QR kod za prijavu na WhatsApp Web. Skeniraj QR kod sa svojim mobitelom.
 
@@ -45,4 +44,4 @@ Kontaktima se pristupa preko XPath selektora, pa se preporučuje ručno testiran
 ## Autor
 
 **Adam Marjanović**  
-[https://github.com/amarjanov23](https://github.com/amarjanov23)
+[https://github.com/amarjanov23](https://github.com/amarjanov23
